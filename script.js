@@ -4,8 +4,12 @@ console.log('Assignment');
 
 const numbers = [10, 20, 30, 40, 50]
 
-const doubledNum = numbers.map((num) => num * 2)
-console.log(doubledNum);
+const doubleFn = () => {
+    const doubledNum = numbers.map((num) => num * 2)
+    return doubledNum
+}
+console.log(doubleFn()); 
+
 
 // The map() method is used to map through the array of numbers, so the parameter (num) which is representing individual elements in the array is assigned to it and used to multiply the elements in the array by two
 // The map() method is used to map through the array of numbers, while using the callback function to execute the operation
