@@ -40,20 +40,24 @@ class Car {
         this.color = color
         this.year = year
     }
+    carDes () {
+        console.log((`${this.maker} is the maker of ${this.color} ${this.model} in ${this.year}`));
+    }
 }
 
 const carInfo = new Car ('Aliu', 'Lexus', 'Gray', '2018')
-console.log(carInfo);
+carInfo.carDes()
 
 const carInfo1 = new Car ('Abdullah', 'BMW', 'Red', '2016')
 const carInfo2 = new Car ('Naheem', 'Sedan', 'White', '2020')
 const carInfo3 = new Car ('Soliu', 'Toyota', 'Black', '2010')
 const carInfo4 = new Car ('Seyi', 'Lamborghini', 'Blue', '2022')
 
-console.log(carInfo1);
-console.log(carInfo2);
-console.log(carInfo3);
-console.log(carInfo4);
+carInfo1.carDes();
+carInfo2.carDes();
+carInfo3.carDes();
+carInfo4.carDes();
+
 
 
 // Question Four
